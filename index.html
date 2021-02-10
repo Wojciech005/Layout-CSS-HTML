@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redical Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6f25fc7d0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+</head>
+
+<body>
+
+    <div class="main__wrap">
+        <header class="header">
+            <menu class="header__menu">
+                <nav>
+                    <a href=""><i class="fas fa-home"></i></a>
+                    <a href=""> About</a>
+                    <a href="">Getting Started</a>
+                    <a href="">Running a Project</a>
+                    <a href="">Design Principles</a>
+                    <a href="">Case Studies</a>
+                    <a href="">Data Dashboard</a>
+                    <a href="">Contacts and FAQ'</a>
+                    <a href="">Opportunity Indicator</a>
+                </nav>
+            </menu>
+            <section class="header__title">
+                <h1>Opportunity Indicator</h1>
+                <p>Welcome to the Opportunity Indicator – our handy tool to help you estimate the amount of space you
+                    need, typical project costs and the benefits your
+                    project could deliver. To use the Opportunity Indicator, simply input the information for your
+                    project below. You can then select the scenario which best
+                    fits your project by clicking on the appropriate box below, or create your own custom scenario using
+                    the slider bars.</p>
+            </section>
+        </header>
+        <div class="main__active">
+            <div class="active__input">
+
+                <div class="first">
+                    <input type="number" /><span className="sgm2"> Current Office Area sqm</span>
+                </div>
+
+                <div class="second">
+                    <input type="number" /> <span>Current Headcount</span>
+                </div>
+                <div class="third">
+                    <input type="number" /> <span>Anticipated Headcount</span>
+                </div>
+                <div class="fourth">
+                    <select name="Region" id="region">
+                        <option value="na">NA</option>
+                        <option value="latam">LATAM</option>
+                        <option value="emea">EMEA</option>
+                        <option value="asia pac">ASIA PAC</option>
+
+                    </select>
+
+                    <span>Region</span>
+                </div>
+
+
+            </div>
+            <div class="active__scenario">
+                <h1>Select a Scenario</h1>
+                <section class="active__scenario-button">
+
+                    <button><img src="/Icons/efficiency.svg" alt="">Aim for efficiency and productivity</button>
+                    <button class="button__innovetion"><img src="/Icons/innovetion.svg" alt="innovention">Aim for
+                        innovation and collaboration</button>
+                    <button> <img src="/Icons/brand.svg" alt="">Aim for talent and brand </button>
+                    <button class="button__customScenario"> <img src="/Icons/custom.svg" alt=""> <span>Custom
+                            scenario</span> </button>
+                </section>
+            </div>
+            <div class="active__down-box-area">
+                <section class="box">
+                    <p>Space Required: <span>150sqm</span> </p>
+                    <p>Fit-out cost: <span> €100,00</span> </p>
+                    <p>Potential space saving: <span>150sqm</span> </p>
+                </section>
+                <div class="list">
+                    <ul>
+                        <li>Key benefit statements shown here</li>
+                        <li>Key benefit statements shown here</li>
+                        <li>Key benefit statements shown here</li>
+                        <li>Key benefit statements shown here</li>
+                    </ul>
+                    <div class="list__button">
+                        <button><i class="fas fa-arrow-up"></i></button>
+                        <button>.PDF</button>
+                        <button>.PNG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="active__input-range">
+                <div class="first">
+                    <h3>In our future workplace work will be conducted:</h3>
+                    <input type="range" name="first" />
+                    <label htmlFor="first">Anywhere at
+                        anytime</label>
+                    <label htmlFor="first">Mainly from the
+                        ofice</label>
+
+                </div>
+                <div class="second">
+                    <h3>Our future workplace will:</h3>
+                    <input type="range" name="second" />
+                    <label htmlFor="second">Provide a
+                        diferentiating
+                        experience</label>
+                    <label htmlFor="second">Provide the
+                        necessities</label>
+                </div>
+                <div class="third">
+                    <h3>When we think about individual seats in the ofice:</h3>
+                    <input type="range" name="third" />
+                    <label htmlFor="second">Depends on activity
+                        or need</label>
+                    <label htmlFor="third">Depends on title and
+                        position</label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
